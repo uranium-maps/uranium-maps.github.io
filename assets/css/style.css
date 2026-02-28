@@ -1,0 +1,20 @@
+/* Fullscreen background canvas */
+#bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    display: block;
+}
+
+/* Optional: style your homepage content */
+.content {
+    position: relative;
+    z-index: 10;
+    color: white;
+    text-align: center;
+    padding-top: 20vh;
+    font-family: sans-serif;
+}
