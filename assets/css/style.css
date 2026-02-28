@@ -1,3 +1,5 @@
+/* ------------------- BACKGROUND STUFF ------------------- */
+
 body {
     font-family: 'Zen Dots', sans-serif;
 }
@@ -27,6 +29,8 @@ body {
     z-index: -1; /* ensures particles stay behind text */
     display: block;
 }
+
+/* ------------------- HOMEPAGE STUFF ------------------- */
 
 /* Centered hero section */
 .hero {
@@ -101,4 +105,152 @@ body {
 .hero-button.secondary:hover {
     background: rgba(255,255,255,0.1);
     transform: scale(1.05);
+}
+
+/* ------------------ GALLERY STUFF ------------------ */
+
+.page-title {
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+/* Grid layout */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 25px;
+    padding: 20px 40px;
+    z-index: 10;
+}
+
+.gallery-card {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+.gallery-card:hover {
+    transform: scale(1.05);
+    background: rgba(255,255,255,0.1);
+}
+
+.gallery-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.gallery-card h3 {
+    color: white;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+/* Lightbox */
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+}
+
+.lightbox.hidden {
+    display: none;
+}
+
+.lightbox-content {
+    background: rgba(255,255,255,0.05);
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    max-width: 90%;
+    width: 600px;
+}
+
+.lightbox-content img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.lightbox-content h2 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.lightbox-content p {
+    color: #ddd;
+    margin-bottom: 20px;
+}
+
+#lightbox-close {
+    padding: 10px 20px;
+    background: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.video-container {
+    margin-top: 20px;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+.extra-images {
+    display: flex;
+    gap: 10px;
+    margin: 15px 0;
+    flex-wrap: wrap;
+}
+
+.extra-images .extra-img {
+    width: 120px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.extra-images .extra-img:hover {
+    transform: scale(1.05);
+}
+
+.tiktok-container {
+    margin-top: 20px;
+    width: 100%;
+    aspect-ratio: 9 / 16;
+}
+
+.tiktok-container iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.hidden {
+    display: none;
 }
