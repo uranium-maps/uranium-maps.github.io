@@ -7,7 +7,6 @@ export const designs = [
         name: "DemiProP2W",
         images: ["assets/images/demi-p2w1.png", "assets/images/demi-p2w2.png"],
         desc: "The overall best, P2W design by Uranium himself. It has a compact layout and uses both RBC and teleporters. This is the best design at the moment.",
-        tiktok: "...",
         comingSoon: false
     },
     {
@@ -43,7 +42,7 @@ export const designs = [
         name: "CompactP2W",
         images: ["assets/images/CompactP2W.png"],
         desc: "Uranium's most compact P2W (and first ever) design. It uses RBC and is very efficient, but not update-proof. Shoutout to fraternal.",
-        tiktok: "...",
+        tiktok: "https://www.tiktok.com/@rereofveyron/video/7608717947795672342",
         comingSoon: false
     }
 ];

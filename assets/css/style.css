@@ -556,3 +556,49 @@ body {
 .hidden {
     display: none !important;
 }
+
+
+
+/* ------------------ COPYRIGHT  PAGE ------------------ */
+/* Copyright page styling */
+.copyright-description {
+    text-align: center;
+    color: rgba(255,255,255,0.85);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 20px auto 40px auto;
+    padding: 0 20px;
+    line-height: 1.6;
+}
+
+.copyright-container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto 80px auto;
+    padding: 30px;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 12px;
+    backdrop-filter: blur(6px);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+}
+
+.copyright-container h2 {
+    font-family: 'Zen Dots', sans-serif;
+    font-size: 1.6rem;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #ffea00;
+}
+
+copyright-container ul {
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+copyright-container li {
+    margin-bottom: 8px;
+}
