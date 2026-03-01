@@ -21,9 +21,9 @@ window.addEventListener("mouseleave", () => {
 
 // Particle layers for depth
 const layers = [
-    { count: 40, speed: 0.15, size: 1.5, color: "rgba(255,255,255,0.6)" },
-    { count: 30, speed: 0.25, size: 2, color: "rgba(255,255,255,0.8)" },
-    { count: 20, speed: 0.35, size: 2.5, color: "rgba(255,255,255,1)" }
+    { count: 50, speed: 0.15, size: 1.5, color: "rgba(255,255,255,0.6)" },
+    { count: 40, speed: 0.25, size: 2, color: "rgba(255,255,255,0.8)" },
+    { count: 30, speed: 0.35, size: 2.5, color: "rgba(255,255,255,1)" }
 ];
 
 const particles = [];

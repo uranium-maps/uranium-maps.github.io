@@ -10,16 +10,37 @@ async function loadPage(url) {
 
     setTimeout(async () => {
         container.innerHTML = html;
-        container.style.opacity = 1;
 
-        // Run gallery script if gallery page is loaded
+        // --- Load gallery script BEFORE firing pageLoaded ---
         if (url.includes("gallery")) {
             const module = await import("./gallery.js");
+
+            // expose functions globally
+            window.initGallery = module.initGallery;
+            window.openDesignBySlug = module.openDesignBySlug;
+
+            // initialize gallery immediately
             module.initGallery();
+
+            // auto-open recommended design from form
+            if (window.selectedDesignSlug) {
+                module.openDesignBySlug(window.selectedDesignSlug);
+                window.selectedDesignSlug = null;
+            }
         }
+
+        // --- Fire pageLoaded event AFTER gallery.js is imported ---
+        document.dispatchEvent(new CustomEvent("pageLoaded", { detail: url }));
+
+        container.style.opacity = 1;
+
+        // --- Run form wizard if form page is loaded ---
+        if (url.includes("form") && window.initFormWizard) {
+            window.initFormWizard();
+        }
+
     }, FADE);
 }
-
 
 // Initial load
 loadPage("pages/home.html");
@@ -31,11 +52,25 @@ document.addEventListener("click", e => {
 
     const url = link.getAttribute("href");
 
-    // Copyright page no no reload do
+    // Copyright page = allow normal navigation
     if (url.includes("copyright")) {
-        return; // allow normal navigation
+        return;
     }
 
     e.preventDefault();
     loadPage(url);
+});
+
+// Highlight active nav button
+document.querySelectorAll('.top-nav button').forEach(btn => {
+    btn.addEventListener('click', () => {
+        const page = btn.dataset.page;
+
+        loadPage(page);
+
+        document.querySelectorAll('.top-nav button')
+            .forEach(b => b.classList.remove('active'));
+
+        btn.classList.add('active');
+    });
 });

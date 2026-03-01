@@ -2,19 +2,25 @@
 
 <div id="gallery-grid" class="gallery-grid"></div>
 
+<!-- Lightbox -->
 <div id="lightbox" class="lightbox hidden">
     <div class="lightbox-content">
 
-        <img id="lightbox-main-img" src="">
-        <div id="lightbox-extra-images" class="extra-images"></div>
+        <div class="lightbox-left">
+            <div class="image-row">
+    <img id="lightbox-main-img">
+    <img id="lightbox-second-img">
+    <div id="lightbox-tiktok-container">
+        <iframe id="lightbox-tiktok"></iframe>
+    </div>
+</div>
 
-        <h2 id="lightbox-title"></h2>
-        <p id="lightbox-desc"></p>
+        <div class="lightbox-right">
+            <h2 id="lightbox-title"></h2>
+            <p id="lightbox-desc"></p>
 
-        <div id="lightbox-tiktok-container" class="tiktok-container hidden">
-            <iframe id="lightbox-tiktok" src="" frameborder="0" allowfullscreen></iframe>
+            <button id="lightbox-close">Close</button>
         </div>
 
-        <button id="lightbox-close">Close</button>
     </div>
 </div>
