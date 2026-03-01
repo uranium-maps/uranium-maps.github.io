@@ -42,7 +42,7 @@ export const designs = [
         name: "CompactP2W",
         images: ["assets/images/CompactP2W.png"],
         desc: "Uranium's most compact P2W (and first ever) design. It uses RBC and is very efficient, but not update-proof. Shoutout to fraternal.",
-        tiktok: "https://www.tiktok.com/@rereofveyron/video/7608717947795672342",
+        tiktok: "https://www.tiktok.com/embed/7608717947795672342",
         comingSoon: false
     }
 ];

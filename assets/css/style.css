@@ -629,7 +629,7 @@ copyright-container li {
         padding: 15px;
         align-items: center;
     }
-
+    
     .image-row {
         flex-direction: column;
         gap: 15px;
@@ -643,12 +643,10 @@ copyright-container li {
         max-height: 40vh;
     }
 
-    /* RIGHT COLUMN */
     .lightbox-right {
         width: 100%;
         text-align: center;
         padding: 0 10px;
-        order: 2;
     }
 
     .lightbox-right h2,
@@ -683,23 +681,19 @@ copyright-container li {
     }
 
     /* TikTok container mobile fix */
-#lightbox-tiktok-container {
-    width: 100% !important;
-    max-width: 350px !important;
-    height: auto;
-    aspect-ratio: 9 / 16;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    #lightbox-tiktok-container {
+        width: 100%;
+        max-width: 350px;
+        margin: 0 auto;
+        aspect-ratio: 9 / 16;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #lightbox-tiktok {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
 }
-
-#lightbox-tiktok {
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-}
-
-}
-
-
