@@ -43,7 +43,7 @@ async function loadPage(url) {
 }
 
 // Initial load
-loadPage("pages/home.html");
+loadPage("Pages/home.html");
 
 // Intercept navigation
 document.addEventListener("click", e => {

@@ -151,7 +151,7 @@ function initFormWizard() {
         });
     }
 
-    loadPage("pages/gallery.html");
+    loadPage("Pages/gallery.html");
 }
 
     renderStep();
