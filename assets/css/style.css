@@ -681,6 +681,25 @@ copyright-container li {
         width: 20px;
         height: 20px;
     }
+
+    /* TikTok container mobile fix */
+#lightbox-tiktok-container {
+    width: 100% !important;
+    max-width: 350px !important;
+    height: auto;
+    aspect-ratio: 9 / 16;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#lightbox-tiktok {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
 }
 
 
