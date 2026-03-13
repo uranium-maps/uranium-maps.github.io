@@ -17,6 +17,11 @@ function initFormWizard() {
     function renderStep() {
         backBtn.classList.toggle("hidden", step === 0);
         nextBtn.textContent = step === 3 ? "Finish" : "Next";
+        
+stepContainer.classList.remove("active");
+setTimeout(() => {
+    stepContainer.classList.add("active");
+}, 10);
 
         switch (step) {
             case 0:

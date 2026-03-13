@@ -697,3 +697,11 @@ copyright-container li {
         border-radius: 10px;
     }
 }
+
+
+/* ------------------ TRANSITIONS ------------------ */
+#page-container {
+    opacity: 0;
+    transition: opacity 0.35s ease;
+}
+

@@ -5,7 +5,7 @@ export const designs = [
     {
         slug: "DemiProP2W",
         name: "DemiProP2W",
-        images: ["assets/images/demi-p2w1.png", "assets/images/demi-p2w2.png"],
+        images: ["assets/images/demi-pro-p2w1.png", "assets/images/demi-pro-p2w2.png"],
         desc: "The overall best, P2W design by Uranium himself. It has a compact layout and uses both RBC and teleporters. This is the best design at the moment.",
         comingSoon: false
     },
